@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#064B4A">
+<title>AL NAFAY — Premium Unstitched Fabrics</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--d:#064B4A;--d2:#04393a;--m:#1FBF8F;--ml:#BDF0D5;--ink:#10292a;--mu:#5d7473;--ln:#dde8e5;--bg:#eef3f2}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:#d9e3e0;font:14px/1.45 Inter,system-ui,sans-serif;color:var(--ink)}
+button,input,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+#app{max-width:430px;min-height:100vh;margin:0 auto;background:#fff;position:relative;padding-bottom:84px;box-shadow:0 0 40px #0003}
+header{position:sticky;top:0;z-index:20;background:var(--d);color:#fff;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;border-bottom:2px solid #8fe3c6}
+header .ib{width:42px;height:42px;display:grid;place-items:center;color:#fff;position:relative}
+.logo{text-align:center;cursor:pointer}.logo b{display:flex;align-items:center;justify-content:center;gap:6px;font:600 28px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:1px}
+.logo small{display:block;font-size:7.5px;letter-spacing:2.6px;margin-top:4px;color:#d3ebe4}
+.badge{position:absolute;top:3px;right:1px;min-width:18px;height:18px;border-radius:9px;background:var(--m);color:#fff;font-size:10px;font-weight:700;display:grid;place-items:center;padding:0 4px}
+.sbar{padding:10px 14px;background:var(--d2)}.sbar input{width:100%;border:0;border-radius:10px;padding:11px 14px;outline:0}
+.hero{position:relative;overflow:hidden;padding:34px 22px 30px;color:#fff;background:linear-gradient(120deg,#0b6a62,#053e3e 55%,#0a6259)}
+.hero:before{content:"";position:absolute;inset:-40%;background:repeating-linear-gradient(115deg,transparent 0 26px,#ffffff12 27px 34px,transparent 35px 60px);transform:rotate(-6deg)}
+.hero>*{position:relative}.hero small{letter-spacing:4px;font-size:12px;font-weight:600}
+.hero h1{margin:8px 0 6px;font:600 36px/1.1 'Cormorant Garamond',Georgia,serif}.hero p{margin:0;font:500 17px 'Cormorant Garamond',Georgia,serif}
+.hero.sm{padding:22px}.hero.sm h1{font-size:30px;margin:0}
+.chips{display:flex;gap:10px;padding:16px 14px 6px;overflow-x:auto;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--ln);border-radius:20px;padding:9px 18px;background:#fff;font-weight:500;white-space:nowrap}
+.chip.on{background:var(--m);color:#fff;border-color:var(--m);font-weight:600}
+.list{padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}.list .card{padding:8px;border-radius:16px;cursor:pointer}.list .pic{border-radius:11px}.list .tag{top:8px;left:8px;font-size:11px;padding:4px 8px}.list .nm{font-size:14px;line-height:1.25;margin:9px 2px 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.list .pr{margin:4px 2px 4px}.list .pr b{font-size:15px}.empty{grid-column:1/-1}.cq{display:inline-flex;border:1px solid var(--ln);border-radius:8px;margin-top:6px;overflow:hidden}.cq button{width:30px;height:28px;font-size:16px}.cq span{width:32px;display:grid;place-items:center;font-weight:600;font-size:13px}
+.card{border:1px solid var(--ln);border-radius:20px;padding:12px;background:#fff}
+.pic{position:relative;aspect-ratio:1;border-radius:14px;overflow:hidden;background:#111;cursor:pointer}
+.pic img{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;top:12px;left:12px;background:var(--ml);color:var(--d);font-weight:600;font-size:12.5px;padding:5px 11px;border-radius:9px}.tag.s{background:var(--m);color:#fff}
+.heart{position:absolute;top:8px;right:8px;width:34px;height:34px;display:grid;place-items:center;color:#fff}.heart.on{color:#ff5b7a}.heart.on svg{fill:#ff5b7a}
+.dots{display:flex;gap:10px;margin:12px 0 10px}
+.dot{width:44px;height:44px;border-radius:50%;border:2px solid #c9d6d3;overflow:hidden;padding:0;background:#eee;flex:none}.dot.on{border-color:var(--m)}.dot img{width:100%;height:100%;object-fit:cover}
+.br{color:var(--m);font-weight:700;font-size:11px;letter-spacing:2px}
+.nm{font-size:18px;font-weight:600;margin:2px 0}.sku{font-size:12px;color:var(--mu)}
+.pr{display:flex;align-items:center;gap:8px;margin:8px 0 12px;flex-wrap:wrap}.pr b{font-size:21px}.pr s{color:#9aaeab;font-size:12px}
+.st{background:var(--ml);color:var(--d);font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:11px}.st.no{background:#fde2e2;color:#a33}
+.row{display:flex;gap:10px}
+.b{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;height:46px;border-radius:11px;font-weight:600;border:1.5px solid var(--d);color:var(--d);background:#fff}
+.b.f{background:var(--d);color:#fff}.b.l{background:var(--ml);border-color:var(--ml);color:var(--d)}.b:disabled{opacity:.45}
+.bc{display:flex;gap:6px;padding:14px 16px 8px;color:var(--mu);font-size:13.5px;align-items:center}.bc a{cursor:pointer}.bc b{color:var(--ink);font-weight:500}
+.gal{margin:6px 14px;border:1.5px solid var(--m);border-radius:10px;padding:8px;display:grid;grid-template-columns:1fr 1fr;gap:6px;background:#fff}
+.gal.one{grid-template-columns:1fr}.gal div{aspect-ratio:1.15;border-radius:9px;overflow:hidden;background:#111}.gal.one div{aspect-ratio:1.3}.gal img{width:100%;height:100%;object-fit:cover;display:block}
+.pd{padding:0 16px}.pd .dots{justify-content:center}
+.sec{padding:14px 16px;border-top:1px solid var(--ln)}.sec h4{margin:0 0 10px;font-size:14.5px}
+.pill{display:inline-block;border:1px solid var(--ln);border-radius:20px;padding:10px 16px;margin:0 8px 8px 0;background:#fff;font-weight:500}.pill.on{background:var(--ml);border-color:var(--m);color:var(--d);font-weight:600}
+.qty{display:flex;align-items:center;justify-content:space-between}.qb{display:flex;border:1.5px solid var(--ln);border-radius:9px;overflow:hidden}.qb button{width:42px;height:42px;font-size:20px}.qb span{width:58px;display:grid;place-items:center;font-weight:600;border-inline:1.5px solid var(--ln)}
+.tr{display:flex;justify-content:space-around;padding:16px 8px;font-size:11px;color:var(--d);text-align:center}.tr div{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1}
+.pad{padding:16px}.pad h2{margin:0 0 6px;font:700 26px 'Cormorant Garamond',Georgia,serif}.pad p{color:var(--mu);margin:6px 0}
+.ci{display:flex;gap:12px;padding:12px;border:1px solid var(--ln);border-radius:16px;margin-bottom:12px;align-items:center}.ci img{width:70px;height:70px;border-radius:10px;object-fit:cover;background:#111}.ci>div{flex:1}.ci button{color:#c0392b;font-size:12px;font-weight:600}
+.tot{display:flex;justify-content:space-between;font-size:18px;font-weight:700;padding:10px 4px 16px}
+label{display:block;font-size:12.5px;font-weight:600;margin:12px 0 5px}
+input,textarea{width:100%;border:1.5px solid var(--ln);border-radius:11px;padding:12px;background:#fff;outline:0}input:focus,textarea:focus{border-color:var(--m)}
+.msg{margin-top:10px;font-weight:500}.msg.e{color:#c0392b}
+.ok{width:76px;height:76px;border-radius:50%;background:var(--ml);color:var(--d);display:grid;place-items:center;margin:26px auto 12px}
+.mn{position:fixed;inset:0;z-index:40;background:#0008;display:none}.mn.on{display:block}
+.mn nav{width:270px;height:100%;background:var(--d);color:#fff;padding:22px 8px}.mn a{display:flex;gap:12px;padding:14px;border-radius:10px;cursor:pointer;font-weight:500}.mn a:active{background:#ffffff18}
+.bn{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;z-index:30;background:#fff;border-top:1px solid var(--ln);display:flex;padding:8px 4px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -6px 20px #0001}
+.bn button{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:12px;color:#40545a;position:relative}.bn button.on{color:var(--m);font-weight:600}.bn .badge{top:-4px;right:22%}
+.toast{position:fixed;bottom:96px;left:50%;transform:translateX(-50%);background:var(--d);color:#fff;padding:11px 20px;border-radius:24px;z-index:60;font-weight:500;box-shadow:0 8px 24px #0004}
+.empty{text-align:center;padding:50px 24px;color:var(--mu)}
+.tabs{display:flex;background:var(--bg);border-radius:12px;padding:4px;margin-bottom:8px}.tabs button{flex:1;padding:11px;border-radius:9px;font-weight:600;color:var(--mu)}.tabs button.on{background:#fff;color:var(--d);box-shadow:0 1px 4px #0002}
+</style></head><body>
+<div id="app">
+<header><button class="ib" data-m="1" aria-label="Menu" id="hm"></button><div class="logo" data-go="#/shop"><b id="lg"></b><small>PREMIUM UNSTITCHED FABRICS</small></div><div style="display:flex"><button class="ib" data-s="1" aria-label="Search" id="hs"></button><button class="ib" data-go="#/cart" aria-label="Cart" id="hc"></button></div></header>
+<div class="sbar" id="sb" hidden><input id="sq" placeholder="Search fabric or SKU" autocomplete="off"></div>
+<main id="v"></main>
+<div class="bn" id="bn"></div>
+</div>
+<div class="mn" id="mn"><nav id="mnn"></nav></div>
+<script>
+const $=s=>document.querySelector(s),money=n=>'Rs. '+Math.round(n||0).toLocaleString('en-PK');
+const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const IC={menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',search:'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',cart:'<path d="M3 4h2l2.4 11h10.2L20 8H6.2"/><circle cx="9" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/>',heart:'<path d="M12 20s-7.5-4.6-9-9.5C2 6.800 5 4 8 4c1.800 0 3.200 1 4 2.300C12.800 5 14.200 4 16 4c3 0 6 2.800 5 6.500-1.500 4.900-9 9.500-9 9.500z"/>',home:'<path d="M3 11 12 3l9 8M5 9.500V21h14V9.500"/>',shop:'<path d="M4 8h16l-1 12H5zM8 8V6a4 4 0 0 1 8 0v2"/>',tag:'<path d="M3 12V4h8l10 10-8 8z"/><circle cx="8" cy="9" r="1.200"/>',user:'<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.500 3.600-7 8-7s8 2.500 8 7"/>',bolt:'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',leaf:'<path d="M20 4C10 4 5 9 5 15c0 1.500.4 2.800 1 4 1 .5 2 1 3 1 6 0 11-5 11-16zM4 21c3-6 6-9 11-12"/>',shield:'<path d="M12 3 4 6v6c0 5 3.500 8 8 9 4.500-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/>',truck:'<path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="7" cy="18" r="1.800"/><circle cx="17" cy="18" r="1.800"/>',check:'<path d="m5 12 5 5 9-10"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.500v.1"/>',phone:'<path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>',swap:'<path d="M4 8h14l-3-3M20 16H6l3 3"/>'};
+const I=(n,s=22)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${IC[n]}</svg>`;
+const OPT=['Thaan (Per Meter)','Suit (Per Piece)'];
+let P=[],S={},cart=JSON.parse(localStorage.getItem('an_cart')||'[]'),fav=JSON.parse(localStorage.getItem('an_fav')||'[]'),F='All',Q='',D={id:0,o:0,q:1,f:0},CK=[],AT='login',DONE=[];
+const saveC=()=>localStorage.setItem('an_cart',JSON.stringify(cart));
+const imgs=p=>{try{const a=JSON.parse(p.image);return(Array.isArray(a)?a:[a]).filter(Boolean)}catch(e){return p.image?[p.image]:[]}};
+const pr=(p,o)=>{const r=o?p.suit:p.thaan,s=o?p.sale_suit:p.sale_thaan,on=p.sale_on&&s>0;return{now:on?s:r,was:on?r:0}};
+const pic=(p,i=0)=>imgs(p)[i]||'';
+const toast=t=>{document.querySelectorAll('.toast').forEach(x=>x.remove());const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1800)};
+const user=()=>JSON.parse(localStorage.getItem('an_user')||'null');
+const brand=()=>esc(S.name||'AL NAFAY');
+function card(p){const x=pr(p,0),tg=!p.stock?'<span class="tag" style="background:#fde2e2;color:#a33">Out of Stock</span>':p.sale_on?'<span class="tag s">Sale</span>':p.new_arrival?'<span class="tag">New Arrival</span>':'';
+return `<article class="card" data-go="#/p/${p.id}"><div class="pic">${pic(p)?`<img src="${esc(pic(p))}" alt="${esc(p.name)}" loading="lazy">`:''}${tg}<button class="heart ${fav.includes(p.id)?'on':''}" data-fav="${p.id}" aria-label="Save">${I('heart',20)}</button></div><div class="nm">${esc(p.name)}</div><div class="pr"><b>${money(x.now)}</b>${x.was?`<s>${money(x.was)}</s>`:''}</div></article>`}
+function list(sale){let a=sale?P.filter(p=>p.sale_on):P;const fb=[...new Set(P.map(p=>(p.fabric||'').trim()).filter(Boolean))];
+if(F!=='All')a=a.filter(p=>(p.fabric||'').trim()===F);if(Q)a=a.filter(p=>(p.name+' '+p.code+' '+p.color).toLowerCase().includes(Q));
+return (sale?`<div class="hero sm"><small>LIMITED OFFER</small><h1>Sale</h1></div>`:`<div class="hero"><small>PREMIUM MEN'S</small><h1>Unstitched Fabrics</h1><p>Timeless Quality &nbsp;|&nbsp; Classic Elegance</p></div>`)
++(fb.length>1?`<div class="chips">${['All',...fb].map(c=>`<button class="chip ${c===F?'on':''}" data-chip="${esc(c)}">${esc(c)}</button>`).join('')}</div>`:'')
++`<div class="list">${a.length?a.map(card).join(''):`<div class="empty">${sale?'No sale items right now.':'No fabrics found.'}</div>`}</div>`}
+function detail(id,f){const p=P.find(x=>x.id===id);if(!p)return `<div class="empty">Product not found.<br><br><button class="b f" data-go="#/shop">Back to Shop</button></div>`;
+if(D.id!==id)D={id,o:0,q:1,f:+f||0};const im=imgs(p),ord=[...im.slice(D.f),...im.slice(0,D.f)].slice(0,4),x=pr(p,D.o);
+return `<div class="bc"><a data-go="#/shop">Home</a>›<a data-go="#/shop">Shop</a>›<b>${esc(p.name)}</b></div>
+<div class="gal ${ord.length<2?'one':''}">${ord.map(s=>`<div><img src="${esc(s)}" alt=""></div>`).join('')||'<div></div>'}</div>
+<div class="pd">${im.length>1?`<div class="dots" style="margin:14px 0">${im.slice(0,4).map((s,i)=>`<button class="dot ${i===D.f?'on':''}" data-th="${i}"><img src="${esc(s)}" alt=""></button>`).join('')}</div>`:''}
+<div class="br">${brand()}</div><div class="nm" style="font-size:22px">${esc(p.name)}</div><div class="sku">SKU: ${esc(p.code||'—')}</div>
+<div class="pr"><b style="font-size:28px">${money(x.now)}</b>${x.was?`<s>${money(x.was)}</s>`:''}<span class="st ${p.stock?'':'no'}">${p.stock?'In Stock':'Out of Stock'}</span></div></div>
+<div class="sec"><h4>Select Option</h4>${OPT.map((o,i)=>`<button class="pill ${D.o===i?'on':''}" data-opt="${i}">${o}</button>`).join('')}</div>
+<div class="sec" style="border:0;padding-top:0"><h4>Quantity</h4><div class="qty"><div class="qb"><button data-q="-1">−</button><span>${D.q}</span><button data-q="1">+</button></div><small style="color:var(--mu)">${D.q} × ${money(x.now)} = ${money(x.now*D.q)}</small></div></div>
+<div class="pad" style="padding-top:4px"><button class="b f" style="width:100%;margin-bottom:10px" data-addd="1" ${p.stock?'':'disabled'}>${I('cart',18)} Add to Cart</button><button class="b l" style="width:100%" data-buy="1" ${p.stock?'':'disabled'}>${I('bolt',18)} Buy Now</button></div>
+<div class="tr"><div>${I('leaf')}Premium Quality</div><div>${I('shield')}Secure Checkout</div><div>${I('truck')}Fast Delivery</div></div>
+<div class="sec"><h4>Product Description</h4><p style="margin:0;color:var(--mu)">${esc(p.description||'Premium gents unstitched fabric. Thaan or Suit options available.')}</p></div>`}
+const line=(p,o,q)=>{const x=pr(p,o);return{id:p.id,name:p.name,tone:p.color||'',opt:OPT[o],unit:x.now,qty:q}};const addLine=l=>{const e=cart.find(c=>c.id===l.id&&c.opt===l.opt);e?e.qty+=l.qty:cart.push(l);saveC()};const thumb=id=>{const p=P.find(x=>x.id===id);return p?pic(p):''};
+function cartV(){if(!cart.length)return `<div class="empty">${I('cart',48)}<h2 style="font:700 24px 'Cormorant Garamond',serif;color:var(--ink)">Your cart is empty</h2><p>Pick a fabric, choose Thaan or Suit and add it here.</p><button class="b f" style="max-width:220px;margin:14px auto 0" data-go="#/shop">Continue Shopping</button></div>`;
+const t=cart.reduce((a,c)=>a+c.unit*c.qty,0);
+return `<div class="pad"><h2>Your Cart (${cart.length})</h2>${cart.map((c,i)=>`<div class="ci"><img src="${esc(thumb(c.id))}" alt=""><div><b>${esc(c.name)}</b><div class="sku">${esc(c.opt)}</div><div class="cq"><button data-cq="${i}:-1">−</button><span>${c.qty}</span><button data-cq="${i}:1">+</button></div><div style="font-weight:600;margin-top:4px">${money(c.unit*c.qty)}</div></div><button data-rm="${i}">Remove</button></div>`).join('')}
+<div class="tot"><span>Total</span><span>${money(t)}</span></div><button class="b f" style="width:100%;margin-bottom:10px" data-co="cart">Checkout</button><button class="b" style="width:100%" data-go="#/shop">Continue Shopping</button></div>`}
+function checkV(){if(!CK.length)return `<div class="empty">Nothing to order yet.<br><br><button class="b f" data-go="#/shop">Go to Shop</button></div>`;const t=CK.reduce((a,c)=>a+c.unit*c.qty,0),u=user()||{};
+return `<div class="pad"><h2>Checkout</h2>${CK.map(c=>`<div class="ci"><img src="${esc(thumb(c.id))}" alt=""><div><b>${esc(c.name)}</b><div class="sku">${esc(c.opt)} · Qty ${c.qty}</div><div style="font-weight:600">${money(c.unit*c.qty)}</div></div></div>`).join('')}<div class="tot"><span>Total</span><span>${money(t)}</span></div>
+<form id="of"><label>Full Name</label><input id="on" required value="${esc(u.name||'')}"><label>Phone / WhatsApp</label><input id="op" type="tel" required><label>Email (optional)</label><input id="oe" type="email"><label>City</label><input id="oc" required><label>Delivery Address</label><textarea id="oa" rows="2" required></textarea><label>Order Note (optional)</label><textarea id="ot" rows="2"></textarea>
+<button class="b f" style="width:100%;margin-top:16px" id="ob">Place Order</button><div class="msg e" id="om"></div></form></div>`}
+function doneV(){return `<div class="pad" style="text-align:center"><div class="ok">${I('check',38)}</div><h2>Order Confirmed</h2><p>Your order has been received. We will contact you to confirm delivery.</p><p><b>Order No: ${DONE.map(i=>'#'+i).join(', ')}</b></p><div style="display:grid;gap:10px;margin-top:18px"><button class="b f" data-go="#/shop">Continue Shopping</button></div></div>`}
+function acctV(){const u=user();if(u)return `<div class="pad"><h2>Welcome, ${esc(u.name)}</h2><p>${esc(u.id)}</p><div style="display:grid;gap:10px;margin-top:16px"><button class="b" data-go="#/cart">My Cart</button><button class="b" data-go="#/contact">Contact Us</button><button class="b f" data-lo="1">Logout</button></div></div>`;
+return `<div class="pad"><h2>My Account</h2><div class="tabs"><button class="${AT=='login'?'on':''}" data-at="login">Login</button><button class="${AT=='signup'?'on':''}" data-at="signup">Sign Up</button></div><form id="af">${AT=='signup'?'<label>Full Name</label><input id="an" required>':''}<label>Email or Phone</label><input id="ai" required><label>Password</label><input id="ap" type="password" required><button class="b f" style="width:100%;margin-top:16px">${AT=='login'?'Login':'Create Account'}</button><div class="msg" id="am"></div></form></div>`}
+function infoV(k){const ph=S.phone||'',wa=(S.wa||'').replace(/\D/g,''),ig=S.ig||'';
+const T={about:['About AL NAFAY',`<p>Premium gents unstitched fabric with simple Thaan and Suit options.</p><p><b>Quality · Comfort · Style</b></p>${ig?`<p>Instagram: ${esc(ig)}</p>`:''}`],
+exchange:['Exchange Policy','<p>Unstitched fabric can be exchanged if it is uncut and unused. Contact us with your order number to arrange an exchange.</p>'],
+contact:['Contact Us',`<p>Call or message us for orders, fabric details and delivery.</p><div style="display:grid;gap:10px;margin-top:14px">${ph?`<a class="b f" href="tel:${esc(ph)}">${I('phone',18)} ${esc(ph)}</a>`:''}${wa?`<a class="b l" href="https://wa.me/${wa}" target="_blank" rel="noopener">WhatsApp</a>`:''}${!ph&&!wa?'<p>Contact details will be added soon.</p>':''}</div>`]}[k];
+return `<div class="pad"><h2>${T[0]}</h2>${T[1]}</div>`}
+function render(){const h=(location.hash||'#/shop').slice(2).split('/'),k=h[0];const V={shop:()=>list(),sale:()=>list(1),p:()=>detail(+h[1],h[2]),cart:cartV,checkout:checkV,done:doneV,account:acctV,about:()=>infoV('about'),contact:()=>infoV('contact'),exchange:()=>infoV('exchange')};
+$('#v').innerHTML=(V[k]||V.shop)();$('#hm').innerHTML=I('menu',28);$('#hs').innerHTML=I('search',26);
+$('#hc').innerHTML=I('cart',26)+(cart.length?`<span class="badge">${cart.length}</span>`:'');
+$('#lg').innerHTML=I('leaf',26)+brand();
+const tabs=[['shop','Home','home'],['shop','Shop','shop'],['sale','Sale','tag'],['account','Account','user'],['cart','Cart','cart']];
+$('#bn').innerHTML=tabs.map((t,i)=>`<button data-go="#/${t[0]}" class="${(k===t[0]||(k==='p'&&i==1))&&i!==0?'on':''}">${I(t[2])}${t[1]}${t[0]==='cart'&&cart.length?`<span class="badge">${cart.length}</span>`:''}</button>`).join('');
+$('#sb').hidden=!(k==='shop'||k==='sale')||$('#sb').dataset.o!=='1'}
+$('#mnn').innerHTML=[['shop','Shop','shop'],['sale','Sale','tag'],['account','Account','user'],['about','About Us','info'],['contact','Contact Us','phone'],['exchange','Exchange','swap']].map(m=>`<a data-go="#/${m[0]}">${I(m[2])}${m[1]}</a>`).join('');
+document.addEventListener('click',e=>{const t=e.target.closest('button,a,[data-go],.mn');if(!t)return;const d=t.dataset;
+if(t.id==='mn'){t.classList.remove('on');return}
+if(d.m){$('#mn').classList.add('on');return}
+if(d.s){const b=$('#sb');b.dataset.o=b.dataset.o==='1'?'0':'1';if(b.dataset.o==='1'&&!/#\/(shop|sale)/.test(location.hash))location.hash='#/shop';else render();if(b.dataset.o==='1')setTimeout(()=>$('#sq').focus(),50);return}
+if(d.fav){const i=+d.fav;fav=fav.includes(i)?fav.filter(x=>x!==i):[...fav,i];localStorage.setItem('an_fav',JSON.stringify(fav));t.classList.toggle('on');e.stopPropagation();return}
+if(d.add){const p=P.find(x=>x.id===+d.add);addLine(line(p,0,1));toast('Added to cart');render();return}
+if(d.chip!==undefined){F=d.chip;render();return}
+if(d.th!==undefined){D.f=+d.th;render();return}
+if(d.opt!==undefined){D.o=+d.opt;render();return}
+if(d.q){D.q=Math.max(1,D.q+ +d.q);render();return}
+if(d.addd||d.buy){const p=P.find(x=>x.id===D.id),l=line(p,D.o,D.q);if(d.addd){addLine(l);toast('Added to cart');render()}else{CK=[l];CK.buy=1;location.hash='#/checkout'}return}
+if(d.cq){const[k,n]=d.cq.split(':');cart[+k].qty=Math.max(1,cart[+k].qty+ +n);saveC();render();return}
+if(d.rm!==undefined){cart.splice(+d.rm,1);saveC();render();return}
+if(d.co){CK=[...cart];location.hash='#/checkout';return}
+if(d.at){AT=d.at;render();return}
+if(d.lo){localStorage.removeItem('an_user');render();return}
+if(d.go){$('#mn').classList.remove('on');location.hash=d.go;window.scrollTo(0,0)}});
+document.addEventListener('input',e=>{if(e.target.id==='sq'){Q=e.target.value.trim().toLowerCase();const c=$('#v .list');const y=$('#sq').selectionStart;render();$('#sb').hidden=false;const s=$('#sq');s.value=e.target.value;s.focus();s.setSelectionRange(y,y)}});
+document.addEventListener('submit',async e=>{e.preventDefault();const f=e.target.id;
+if(f==='of'){const b=$('#ob');b.disabled=true;b.textContent='Placing order…';const v=i=>$('#'+i).value.trim();try{const r=await fetch('/api/orders',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:CK.map(c=>({product_id:c.id,product:c.name,tone:c.tone,option:c.opt,unit_price:c.unit,quantity:c.qty})),name:v('on'),email:v('oe'),phone:v('op'),city:v('oc'),address:v('oa'),note:v('ot')})});if(!r.ok)throw 0;const ids=[(await r.json()).id];
+DONE=ids;if(!CK.buy){cart=[];saveC()}CK=[];location.hash='#/done'}catch(x){b.disabled=false;b.textContent='Place Order';$('#om').textContent='Order could not be sent. Check your connection and try again.'}}
+if(f==='af'){const m=$('#am'),i=$('#ai').value.trim(),p=$('#ap').value,K='alnafay_account_v17';
+if(AT==='signup'){if(p.length<6){m.className='msg e';m.textContent='Password must be at least 6 characters.';return}localStorage.setItem(K,JSON.stringify({name:$('#an').value.trim(),id:i,pass:p}));AT='login';render();$('#am').textContent='Account created. You can now login.'}
+else{const a=JSON.parse(localStorage.getItem(K)||'null');if(!a){m.className='msg e';m.textContent='No account found. Please sign up first.';return}
+if(a.id!==i||a.pass!==p){m.className='msg e';m.textContent='Incorrect email/phone or password.';return}localStorage.setItem('an_user',JSON.stringify({name:a.name,id:a.id}));location.hash='#/shop';render()}}});
+addEventListener('hashchange',render);
+(async()=>{render();try{[P,S]=await Promise.all([fetch('/api/products').then(r=>r.json()),fetch('/api/settings').then(r=>r.json())])}catch(e){$('#v').innerHTML='<div class="empty">Could not load products. Start the server with run.bat and open http://localhost:5000/</div>';return}
+P=P.map(p=>({...p,id:+p.id}));cart=cart.filter(c=>P.some(p=>p.id===c.id)).map(({img,...c})=>c);saveC();render()})();
+</script></body></html>
